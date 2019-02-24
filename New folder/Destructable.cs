@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Destructable : MonoBehaviour
+{
+    [SerializeField] [Range(0, 5)] float m_destoryDelay;
+    [SerializeField] GameObject m_explosion = null;
+    [SerializeField] bool m_activateRigidBody = false;
+    [SerializeField] [Range(0,10000)] int m_points = 0;
+
+    bool m_destroyed = false;
+
+    void DestroyGameObject()
+    {
+        if (m_destroyed == false)
+        {
+            m_destroyed = true;
+
+            Game.Instance.AddPoints(m_points);
+
+            if (m_activateRigidBody)
+            {
+                GetComponent<Rigidbody>().isKinematic = false;
+            }
+            if(m_explosion)
+            {
+                Instantiate(m_explosion, transform.position, transform.rotation);
+            }
+
+            Destroy(gameObject, m_destoryDelay);
+        }
+    }
+}
