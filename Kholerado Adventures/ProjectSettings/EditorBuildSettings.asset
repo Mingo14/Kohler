@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Game Screen.unity
+    guid: b4de170c06b0cda4980ee5e5e080e555
+  - enabled: 1
+    path: Assets/Scenes/Marker Coaster.unity
+    guid: 43d35362b9e35ed49914aee58c214908
+  - enabled: 1
+    path: Assets/Scenes/Gods Comma.unity
+    guid: 60c2bc1fbccc5f842ab41bbd5189d572
+  - enabled: 1
+    path: Assets/Scenes/Opposite Day.unity
+    guid: ccb6a8a2baaceb049b321073b9913a0c
+  - enabled: 1
+    path: Assets/Scenes/Price Is Right.unity
+    guid: 70c27563201309e46a863f00d8283fff
+  - enabled: 1
+    path: Assets/Scenes/Where Is My Puppy.unity
+    guid: c9a37a3a4f0190a4e9f21fc88de26231
   m_configObjects: {}
