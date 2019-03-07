@@ -3,7 +3,7 @@
 public class CoasterJump : MonoBehaviour
 {
     [SerializeField] private GameObject m_coaster = null;
-    [SerializeField] [Range(1, 10)] private float m_jumpPower = 0.0f;
+    [SerializeField] [Range(1, 10)] private float m_jumpPower = 1.0f;
     [SerializeField] private Camera MainMenuCamera = null;
     [SerializeField] private Camera thisCamera = null;
     private int m_lives = 3;

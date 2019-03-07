@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_coaster: {fileID: 1605744607}
-  m_jumpPower: 5
+  m_jumpPower: 1
   MainMenuCamera: {fileID: 519420031}
   thisCamera: {fileID: 1799494877}
 --- !u!65 &1605744609
